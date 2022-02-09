@@ -1,16 +1,18 @@
-import { CreateContext,useState } from "react";
+import { createContext, useState } from "react";
 
-export const opticsContext = CreateContext();
+export const opticsContext = createContext();
 
-export const opticsContextProvider = ({children}) => {
+export const OpticsContextProvider = ({children}) => {
     const [optics, setOptics] = useState([]);
 
     useEffect(() => {
-        Get().then(data =>setOptics(data.listOfOptics)).catch();
+        Get()
+        .then(res =>setOptics(res.listOfOptics))
+        .catch(()=> console.log());
     }, []);
 
     return (
-        <opticsContext.Provider value={{optics}}>
+        <opticsContext.Provider value={{optics, setOptics}}>
            {children}
         </opticsContext.Provider>
 
