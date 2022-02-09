@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { BodyCare } from "../Components/Pages/BodyCare/BodyCare";
 import { Home } from "../Components/Pages/Home/Home";
 import { HouseCare } from "../Components/Pages/HouseCare/HouseCare";
-import { Links } from "../Components/Links/Links";
+import { Links } from "../Components/Features/Links/Links";
 import { Manager } from "../Components/Pages/Manager/Manager";
 import { Medicines } from "../Components/Pages/Medicines/Medicines";
 
