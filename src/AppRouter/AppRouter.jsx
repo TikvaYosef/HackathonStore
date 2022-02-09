@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { BodyCare } from "../Components/BodyCare/BodyCare";
-import { Home } from "../Components/Home/Home";
-import { HouseCare } from "../Components/HouseCare/HouseCare";
+import { BodyCare } from "../Components/Pages/BodyCare/BodyCare";
+import { Home } from "../Components/Pages/Home/Home";
+import { HouseCare } from "../Components/Pages/HouseCare/HouseCare";
 import { Links } from "../Components/Links/Links";
-import { Manager } from "../Components/Manager/Manager";
-import { Medicines } from "../Components/Medicines/Medicines";
+import { Manager } from "../Components/Pages/Manager/Manager";
+import { Medicines } from "../Components/Pages/Medicines/Medicines";
 
 
 export const AppRouter = () => {
