@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HackathonStore/static/css/main.073c9b0a.css",
+    "main.js": "/HackathonStore/static/js/main.ad9ec774.js",
+    "static/js/787.6677d36b.chunk.js": "/HackathonStore/static/js/787.6677d36b.chunk.js",
+    "index.html": "/HackathonStore/index.html",
+    "main.073c9b0a.css.map": "/HackathonStore/static/css/main.073c9b0a.css.map",
+    "main.ad9ec774.js.map": "/HackathonStore/static/js/main.ad9ec774.js.map",
+    "787.6677d36b.chunk.js.map": "/HackathonStore/static/js/787.6677d36b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.ad9ec774.js"
+  ]
+}
