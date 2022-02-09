@@ -54,6 +54,5 @@ export async function Delete() {
             .catch(() => {})
     }
     catch{
-        
     }
 }
