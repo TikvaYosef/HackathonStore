@@ -1,0 +1,22 @@
+/* .NavBar{
+text-decoration: none;
+list-style-type: none;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+font-family: 'Lobster', cursive;
+font-weight: bold;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:link:active, a:visited:active {
+    color: black;
+}
+
+a:hover{
+    background-color:blanchedalmond;
+} */
