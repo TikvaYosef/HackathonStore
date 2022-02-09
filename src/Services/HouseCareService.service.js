@@ -18,7 +18,6 @@ export async function GetById() {
             .catch(() => {})
     }
     catch{
-    
     }
 }
 
