@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import '../Links/Links.css';
+import { useAuth } from "../../../Context/AuthProvider";
 // import AppBar from '@mui/material/AppBar';
 // import Box from '@mui/material/Box';
 // import Toolbar from '@mui/material/Toolbar';
@@ -18,6 +19,7 @@ import '../Links/Links.css';
 
 
 export const Links = () => {
+    const auth = useAuth();
     return (
         <nav className="sideBar">
             <ul >
