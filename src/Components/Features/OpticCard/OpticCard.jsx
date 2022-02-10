@@ -8,15 +8,17 @@ import "../../Pages/Optics/Optics.css";
 
 export default function OpticCard({ opticItem }) {
     return (
-            <Card className='opticCard' sx={{ maxWidth: 325 }}>
+            <Card className='opticCard' sx={{ maxWidth: 325 ,minWidth:300}}>
                 <CardActionArea className='opticContent'>
-                    <CardMedia className='opticPic'
+                    <div className='opticPic'>
+                    <CardMedia 
                         component="img"
-                        // height="150"
-                        // width="150"
+                        height="150"
+                        width="150"
                         image={opticItem.ProductImg}
                         alt="green iguana"
                     />
+                    </div>
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
                             {opticItem.CompanyName}
