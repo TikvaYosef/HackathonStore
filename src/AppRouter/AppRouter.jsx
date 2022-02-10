@@ -4,7 +4,7 @@ import { BodyCare } from "../Components/Pages/BodyCare/BodyCare";
 import { Home } from "../Components/Pages/Home/Home";
 import { HouseCare } from "../Components/Pages/HouseCare/HouseCare";
 import { Links } from "../Components/Features/Links/Links";
-import { Manager } from "../Components/Pages/Admin/Admin";
+import { Admin, Manager } from "../Components/Pages/Admin/Admin";
 import { Medicines } from "../Components/Pages/Medicines/Medicines";
 import { Optics } from "../Components/Pages/Optics/Optics";
 import Header from "../Components/Features/Header/Header";
@@ -21,12 +21,11 @@ export const AppRouter = () => {
         <BrowserRouter>
            <Header/>
                 <Links />
-          
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route  path="/BodyCare" element={<BodyCare />} />
                 <Route  path="/HouseCare" element={<HouseCare />} />
-                <Route  path="/Manager" element={<Manager />} />
+                <Route  path="/Admin" element={<Admin />} />
                 <Route  path="/Medicines" element={<Medicines />} />
                 <Route  path="/Optics" element={<Optics />} />
                 <Route path="/Profile" element={<RequiredAuth><Profile/></RequiredAuth>}/>
