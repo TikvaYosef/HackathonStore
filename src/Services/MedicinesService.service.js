@@ -13,7 +13,7 @@ export async function Get() {
 export async function GetById(id) {
     try {
 
-        return await fetch(`${basicUrl}/${id}`)
+        return await fetch(`${basicUrl}/Medicines/${id}`)
             .then(res => res.json())
     }
     catch(error){
@@ -30,7 +30,7 @@ export async function Post(data) {
     } 
 
     try {
-        return await fetch(basicUrl,option)
+        return await fetch(`${basicUrl}/Medicines`,option)
             .then(res => res.json())
             .then(data => console.log('Success:', data));
     }
@@ -48,7 +48,7 @@ export async function Put(id,data) {
     } 
 
     try {
-        return await fetch(`${basicUrl}/${id}`,option)
+        return await fetch(`${basicUrl}/Medicines/${id}`,option)
             .then(res => res.json())
             .then(data => console.log('Success:', data));
     }
@@ -63,7 +63,7 @@ export async function Delete() {
             method: 'PUT',
         } 
 
-        return await fetch(basicUrl,option)
+        return await fetch(`${basicUrl}/Medicines`,option)
             .then(res => res.json())
     }
     catch(error){
