@@ -13,11 +13,14 @@ import NotFound from '../Components/Pages/NotFound/NotFound'
 import Users from '../Components/Pages/Users/Users'
 import RequiredAuth from "../Components/Features/RequiredAuth/RequiredAuth";
 import Login from "../Components/Pages/Login/Login";
+import { AuthProvider } from "../Context/AuthProvider";
+
 
 
 
 export const AppRouter = () => {
     return (
+        <AuthProvider>
         <BrowserRouter>
            <Header/>
                 <Links />
@@ -36,5 +39,6 @@ export const AppRouter = () => {
                 <Route path="*" element={<NotFound/>}/>
             </Routes>
         </BrowserRouter>
+        </AuthProvider>
     )
 }

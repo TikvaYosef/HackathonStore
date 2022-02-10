@@ -30,9 +30,7 @@ export const Admin = () => {
                 </thead>
                 <tbody>
                     {
-
                         BodyCare.map(() =>
-
                             <tr>
                                 <td>{BodyCare.BodyCareId}</td>
                                 <td>{BodyCare.CompanyName}</td>
