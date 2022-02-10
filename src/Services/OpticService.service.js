@@ -19,7 +19,7 @@ export async function GetById(id) {
         return await fetch(`${basicUrl}/Optics/${id}`)
             .then(res => res.json())
             .then((data)=>console.log(data))
-            .catch(() => {})
+           
     }
     catch{
     
