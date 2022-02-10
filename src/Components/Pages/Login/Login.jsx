@@ -12,8 +12,8 @@ export default function Login() {
 
     function handleLogin(){
         auth.login(user);
-        // navigateToHome('/',{replace: true})
-        // navigateToHome(redirectPath,{replace: true})
+        navigateToHome('/',{replace: true})
+        navigateToHome(redirectPath,{replace: true})
         navigateToHome(redirectPath)
     }
 
