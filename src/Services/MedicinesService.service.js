@@ -1,58 +1,73 @@
+const basicUrl = 'https://etapharm.azurewebsites.net/api';
+
 export async function Get() {
     try {
 
-        return await fetch("")
+        return await fetch(`${basicUrl}/Medicines`)
             .then(res => res.json())
-            .catch(() => {})
     }
-    catch{
-        
+    catch(err){
+        console.log(err);
     }
 }
 
-export async function GetById() {
+export async function GetById(id) {
     try {
 
-        return await fetch("")
+        return await fetch(`${basicUrl}/${id}`)
             .then(res => res.json())
-            .catch(() => {})
     }
-    catch{
-    
+    catch(err){
+        console.log(err);
     }
 }
 
-export async function Post() {
-    try {
+export async function Post(data) {
 
-        return await fetch()
+    const option = {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data),
+    } 
+
+    try {
+        return await fetch(`${basicUrl},${option}`)
             .then(res => res.json())
-            .catch(() => {})
+            .then(data => console.log('Success:', data));
     }
-    catch{
-        
+    catch(err){
+        console.error('Error:', error);
     }
 }
 
-export async function Put() {
-    try {
+export async function Put(id,data) {
 
-        return await fetch()
+    const option = {
+        method: 'PUT',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data),
+    } 
+
+    try {
+        return await fetch(`${basicUrl}/${id}`,option)
             .then(res => res.json())
-            .catch(() => {})
+            .then(data => console.log('Success:', data));
     }
-    catch{
-        
+    catch(err){
+        console.error('Error:', error);
     }
 }
 
 export async function Delete() {
     try {
+        const option = {
+            method: 'PUT',
+        } 
 
-        return await fetch()
+        return await fetch(basicUrl,option)
             .then(res => res.json())
-            .catch(() => {})
     }
-    catch{
+    catch(err){
+        console.error('Error:', error);
     }
 }
