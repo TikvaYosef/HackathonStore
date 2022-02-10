@@ -2,23 +2,22 @@ const basicUrl = 'https://etapharm.azurewebsites.net/api';
 
 export async function Get() {
     try {
-
         return await fetch(`${basicUrl}/Medicines`)
             .then(res => res.json())
     }
-    catch(err){
-        console.log(err);
+    catch(error){
+        console.log(error);
     }
 }
 
 export async function GetById(id) {
     try {
 
-        return await fetch(`${basicUrl}/${id}`)
+        return await fetch(`${basicUrl}/Medicines/${id}`)
             .then(res => res.json())
     }
-    catch(err){
-        console.log(err);
+    catch(error){
+        console.log(error);
     }
 }
 
@@ -31,11 +30,11 @@ export async function Post(data) {
     } 
 
     try {
-        return await fetch(`${basicUrl},${option}`)
+        return await fetch(`${basicUrl}/Medicines`,option)
             .then(res => res.json())
             .then(data => console.log('Success:', data));
     }
-    catch(err){
+    catch(error){
         console.error('Error:', error);
     }
 }
@@ -49,11 +48,11 @@ export async function Put(id,data) {
     } 
 
     try {
-        return await fetch(`${basicUrl}/${id}`,option)
+        return await fetch(`${basicUrl}/Medicines/${id}`,option)
             .then(res => res.json())
             .then(data => console.log('Success:', data));
     }
-    catch(err){
+    catch(error){
         console.error('Error:', error);
     }
 }
@@ -64,10 +63,10 @@ export async function Delete() {
             method: 'PUT',
         } 
 
-        return await fetch(basicUrl,option)
+        return await fetch(`${basicUrl}/Medicines`,option)
             .then(res => res.json())
     }
-    catch(err){
+    catch(error){
         console.error('Error:', error);
     }
 }

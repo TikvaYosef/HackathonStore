@@ -3,7 +3,7 @@ export async function Get() {
 
         return await fetch("https://etapharm.azurewebsites.net/api/BodyCare")
             .then(res => res.json())
-            .catch(() => console.log("error"))
+         
     }
     catch{
         console.log("error catch") 

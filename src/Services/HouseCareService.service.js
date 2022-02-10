@@ -1,12 +1,13 @@
+
 export async function Get() {
     try {
 
-        return await fetch("")
+        return await fetch("https://etapharm.azurewebsites.net/api/HouseCare")
             .then(res => res.json())
-            .catch(() => {})
+         
     }
     catch{
-        
+        console.log("error")
     }
 }
 
