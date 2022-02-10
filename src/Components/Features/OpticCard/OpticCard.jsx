@@ -9,7 +9,7 @@ import {GetById} from '../../../Services/OpticService.service';
 
 export default function OpticCard({ opticItem }) {
     return (
-        <Card className='opticCard' sx={{ maxWidth: 325, minWidth: 300 }}>
+        <Card className='medicineCard' sx={{ maxWidth: 325, minWidth: 300 }}>
             <CardActionArea className='opticContent'>
                 <div className='opticPic'>
                     <CardMedia

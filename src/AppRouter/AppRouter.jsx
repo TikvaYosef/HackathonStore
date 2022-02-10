@@ -8,6 +8,11 @@ import { Admin, Manager } from "../Components/Pages/Admin/Admin";
 import { Medicines } from "../Components/Pages/Medicines/Medicines";
 import { Optics } from "../Components/Pages/Optics/Optics";
 import Header from "../Components/Features/Header/Header";
+import Profile from "../Components/Pages/Profile/Profile";
+import NotFound from '../Components/Pages/NotFound/NotFound'
+import Users from '../Components/Pages/Users/Users'
+import RequiredAuth from "../Components/Features/RequiredAuth/RequiredAuth";
+import Login from "../Components/Pages/Login/Login";
 
 
 
@@ -23,6 +28,12 @@ export const AppRouter = () => {
                 <Route  path="/Admin" element={<Admin />} />
                 <Route  path="/Medicines" element={<Medicines />} />
                 <Route  path="/Optics" element={<Optics />} />
+                <Route path="/Profile" element={<RequiredAuth><Profile/></RequiredAuth>}/>
+                <Route path="/Login" element={<Login/>}>
+                     <Route path="/Login/:userId" element={<Users/>}/>
+                     <Route path="/Login/Admin" element={<Admin/>}/>
+                </Route>
+                <Route path="*" element={<NotFound/>}/>
             </Routes>
         </BrowserRouter>
     )
