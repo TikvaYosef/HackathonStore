@@ -3,7 +3,7 @@ import {basicUrl} from './MedicinesService.service';
 export async function Get() {
     try {
 
-        return await fetch(`${basicUrl}/api/Optics`)
+        return await fetch(`${basicUrl}/Optics`)
             .then(res => res.json())
             .catch(() => console.log("error"))
     }
