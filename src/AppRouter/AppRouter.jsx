@@ -6,6 +6,7 @@ import { HouseCare } from "../Components/Pages/HouseCare/HouseCare";
 import { Links } from "../Components/Features/Links/Links";
 import { Manager } from "../Components/Pages/Manager/Manager";
 import { Medicines } from "../Components/Pages/Medicines/Medicines";
+import { Optics } from "../Components/Pages/Optics/Optics";
 
 
 export const AppRouter = () => {
@@ -20,6 +21,7 @@ export const AppRouter = () => {
                 <Route  path="/HouseCare" element={<HouseCare />} />
                 <Route  path="/Manager" element={<Manager />} />
                 <Route  path="/Medicines" element={<Medicines />} />
+                <Route  path="/Optics" element={<Optics />} />
             </Routes>
         </BrowserRouter>
     )

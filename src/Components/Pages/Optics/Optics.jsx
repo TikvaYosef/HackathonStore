@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
-import {opticsContext} from '../../../Context/OpticsContext';
+import { OpticCards } from "./OpticsCards";
+import { OpticsContextProvider } from "../../../Context/OpticsContext";
 
 
 export const Optics = () => {
-    const { optics, setOptics} = useContext(opticsContext);
-
     return (
-        shoes.map((item) => 
+        <OpticsContextProvider >
+            <OpticCards/>
+        </OpticsContextProvider>
     )
 }
