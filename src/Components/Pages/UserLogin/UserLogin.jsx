@@ -3,8 +3,8 @@ import React from "react";
 
 export const Registration = () => {
     return (
-        <div>
-
+        <div className="sideBar">
+                <h1>Registration</h1>
         </div>
     )
 }
