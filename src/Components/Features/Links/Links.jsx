@@ -19,8 +19,8 @@ import '../Links/Links.css';
 
 export const Links = () => {
     return (
-        <nav>
-            <ul className="NavBar">
+        <nav className="sideBar">
+            <ul >
             <Link to="/"><li>Home</li></Link>
             <Link to="/BodyCare"><li>BodyCare</li></Link>
             <Link to="/HouseCare"><li>HouseCare</li></Link>
