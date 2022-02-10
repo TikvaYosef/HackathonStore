@@ -7,12 +7,14 @@ import { Links } from "../Components/Features/Links/Links";
 import { Manager } from "../Components/Pages/Admin/Admin";
 import { Medicines } from "../Components/Pages/Medicines/Medicines";
 import { Optics } from "../Components/Pages/Optics/Optics";
+import Header from "../Components/Features/Header/Header";
+
 
 
 export const AppRouter = () => {
     return (
         <BrowserRouter>
-           
+           <Header/>
                 <Links />
           
             <Routes>
