@@ -4,7 +4,7 @@ import { BodyCare } from "../Components/Pages/BodyCare/BodyCare";
 import { Home } from "../Components/Pages/Home/Home";
 import { HouseCare } from "../Components/Pages/HouseCare/HouseCare";
 import { Links } from "../Components/Features/Links/Links";
-import {Admin} from '../Components/Pages/Admin/Admin'
+import { Admin } from "../Components/Pages/Admin/Admin";
 import { Medicines } from "../Components/Pages/Medicines/Medicines";
 import { Optics } from "../Components/Pages/Optics/Optics";
 import Header from "../Components/Features/Header/Header";
@@ -33,8 +33,8 @@ export const AppRouter = () => {
                 <Route  path="/Optics" element={<Optics />} />
                 <Route path="/Profile" element={<RequiredAuth><Profile/></RequiredAuth>}/>
                 <Route path="/Login" element={<Login/>}>
-                     <Route path="/Login/:userId" element={<Users/>}/>
-                     <Route path="/Login/Admin" element={<Admin/>}/>
+                <Route path="/Login/:userId" element={<Users/>}/>
+                <Route path="/Login/Admin" element={<Admin/>}/>
                 </Route>
                 <Route path="*" element={<NotFound/>}/>
             </Routes>

@@ -30,10 +30,8 @@ export const Admin = () => {
                 </thead>
                 <tbody>
                     {
-
                         BodyCare.map((item) =>
-                                
-                           <tr>
+                            <tr>
                                 <td>{item.BodyCareId}</td>
                                 <td>{item.CompanyName}</td>
                                 <td>{item.ProductName}</td>
@@ -41,7 +39,6 @@ export const Admin = () => {
                                 <td>{item.ProductDescription} </td>
                                 <td><img src={item.ProductImg} /></td>
                             </tr>
-                           
                         )
                     }
                 </tbody>
