@@ -24,7 +24,7 @@ export const Links = () => {
             <Link to="/"><li>Home</li></Link>
             <Link to="/BodyCare"><li>BodyCare</li></Link>
             <Link to="/HouseCare"><li>HouseCare</li></Link>
-            <Link to="/Manager"><li>Manager</li></Link>
+            <Link to="/Admin"><li>Admin</li></Link>
             <Link to="/Medicines"><li>Medicines</li></Link>
             <Link to="/Optics"><li>Optics</li></Link>
             </ul>
