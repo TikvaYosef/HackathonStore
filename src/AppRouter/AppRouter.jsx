@@ -4,7 +4,7 @@ import { BodyCare } from "../Components/Pages/BodyCare/BodyCare";
 import { Home } from "../Components/Pages/Home/Home";
 import { HouseCare } from "../Components/Pages/HouseCare/HouseCare";
 import { Links } from "../Components/Features/Links/Links";
-import { Admin, Manager } from "../Components/Pages/Admin/Admin";
+import {Admin} from '../Components/Pages/Admin/Admin'
 import { Medicines } from "../Components/Pages/Medicines/Medicines";
 import { Optics } from "../Components/Pages/Optics/Optics";
 import Header from "../Components/Features/Header/Header";
@@ -13,11 +13,14 @@ import NotFound from '../Components/Pages/NotFound/NotFound'
 import Users from '../Components/Pages/Users/Users'
 import RequiredAuth from "../Components/Features/RequiredAuth/RequiredAuth";
 import Login from "../Components/Pages/Login/Login";
+import { AuthProvider } from "../Context/AuthProvider";
+
 
 
 
 export const AppRouter = () => {
     return (
+        <AuthProvider>
         <BrowserRouter>
            <Header/>
                 <Links />
@@ -36,5 +39,6 @@ export const AppRouter = () => {
                 <Route path="*" element={<NotFound/>}/>
             </Routes>
         </BrowserRouter>
+        </AuthProvider>
     )
 }
