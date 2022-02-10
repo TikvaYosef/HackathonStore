@@ -31,16 +31,17 @@ export const Admin = () => {
                 <tbody>
                     {
 
-                        BodyCare.map(() =>
-
-                            <tr>
-                                <td>{BodyCare.BodyCareId}</td>
-                                <td>{BodyCare.CompanyName}</td>
-                                <td>{BodyCare.ProductName}</td>
-                                <td>{BodyCare.Price}</td>
-                                <td>{BodyCare.ProductDescription} </td>
-                                <td><img src={BodyCare.ProductImg} /></td>
+                        BodyCare.map((item) =>
+                                
+                           <tr>
+                                <td>{item.BodyCareId}</td>
+                                <td>{item.CompanyName}</td>
+                                <td>{item.ProductName}</td>
+                                <td>{item.Price}</td>
+                                <td>{item.ProductDescription} </td>
+                                <td><img src={item.ProductImg} /></td>
                             </tr>
+                           
                         )
                     }
                 </tbody>
