@@ -10,7 +10,7 @@ export const MedicinesCards = () => {
         <div>
             {
                 medicines.map((item) =>
-                    <MedicinesCard MedicineCareItem={item} />
+                    <MedicinesCard MedicineCareItem={item} key={item.MedicineId} />
                 )
             }
         </div>
