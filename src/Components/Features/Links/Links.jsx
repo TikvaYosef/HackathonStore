@@ -27,6 +27,10 @@ export const Links = () => {
             <Link to="/Manager"><li>Manager</li></Link>
             <Link to="/Medicines"><li>Medicines</li></Link>
             <Link to="/Optics"><li>Optics</li></Link>
+            <Link to="/Profile">Profile</Link>
+          {
+            !auth.user && (<Link to="/Login">Login</Link>)
+          }
             </ul>
         </nav>
     )
