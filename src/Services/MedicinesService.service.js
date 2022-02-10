@@ -2,7 +2,6 @@ const basicUrl = 'https://etapharm.azurewebsites.net/api';
 
 export async function Get() {
     try {
-
         return await fetch(`${basicUrl}/Medicines`)
             .then(res => res.json())
     }
