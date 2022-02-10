@@ -9,7 +9,7 @@ export const OpticCards = () => {
     console.log(optics);
 
     return (
-        <section className="OpticCardsContainer">
+        <section className="OpticCardsContainer main">
             {optics.map((item) => <OpticCard opticItem={item} key={item.OpticsId} />)}
         </section>
     )

@@ -7,7 +7,7 @@ export const MedicinesCards = () => {
     const { medicines } = useContext(MedicinesContext);
 
     return (
-        <div>
+        <div className="main">
             {
                 medicines.map((item) =>
                     <MedicinesCard MedicineCareItem={item} key={item.MedicineId} />

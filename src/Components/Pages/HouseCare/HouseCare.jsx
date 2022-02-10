@@ -5,7 +5,7 @@ import { HouseCareCards } from "./HouseCareCards";
 
 export const HouseCare = () => {
     return (
-        <div className="HouseCare">
+        <div className="HouseCare main">
             <HouseCareContextProvider>
                 <HouseCareCards />
             </HouseCareContextProvider>
