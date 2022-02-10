@@ -1,24 +1,25 @@
+import { basicUrl } from "./MedicinesService.service"
 
 export async function Get() {
     try {
 
-        return await fetch("https://etapharm.azurewebsites.net/api/HouseCare")
+        return await fetch(`${basicUrl}/HouseCare`)
             .then(res => res.json())
-         
+
     }
-    catch{
+    catch {
         console.log("error")
     }
 }
 
-export async function GetById() {
+export async function GetById(id) {
     try {
 
-        return await fetch("")
+        return await fetch(`${basicUrl}/HouseCare/${id}`)
             .then(res => res.json())
-            .catch(() => {})
+            .then((data) => console.log(data))
     }
-    catch{
+    catch {
     }
 }
 
@@ -27,10 +28,10 @@ export async function Post() {
 
         return await fetch()
             .then(res => res.json())
-            .catch(() => {})
+            .catch(() => { })
     }
-    catch{
-        
+    catch {
+
     }
 }
 
@@ -39,10 +40,10 @@ export async function Put() {
 
         return await fetch()
             .then(res => res.json())
-            .catch(() => {})
+            .catch(() => { })
     }
-    catch{
-        
+    catch {
+
     }
 }
 
@@ -51,9 +52,9 @@ export async function Delete() {
 
         return await fetch()
             .then(res => res.json())
-            .catch(() => {})
+            .catch(() => { })
     }
-    catch{
-        
+    catch {
+
     }
 }
