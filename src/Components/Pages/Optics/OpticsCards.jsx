@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { opticsContext } from '../../../Context/OpticsContext';
 import OpticCard from '../../Features/OpticCard/OpticCard';
+import "./Optics.css";
 
 
 export const OpticCards = () => {
@@ -8,7 +9,7 @@ export const OpticCards = () => {
     console.log(optics);
 
     return (
-        <section className="">
+        <section className="OpticCardsContainer">
             {optics.map((item) => <OpticCard opticItem={item} key={item.OpticsId} />)}
         </section>
     )

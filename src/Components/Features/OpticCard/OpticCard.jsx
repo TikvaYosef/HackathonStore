@@ -4,35 +4,37 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
+import "../../Pages/Optics/Optics.css";
 
-export default function OpticCard({opticItem}) {
-  return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image={opticItem.ProductImg}
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-          {opticItem.CompanyName}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-          {opticItem.ProductDescription}
-          <p>{opticItem.price}</p>
-          <p>{opticItem.Quentity}</p>
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-      </CardActions>
-    </Card>
-  );
+export default function OpticCard({ opticItem }) {
+    return (
+            <Card className='opticCard' sx={{ maxWidth: 325 }}>
+                <CardActionArea className='opticContent'>
+                    <CardMedia className='opticPic'
+                        component="img"
+                        // height="150"
+                        // width="150"
+                        image={opticItem.ProductImg}
+                        alt="green iguana"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            {opticItem.CompanyName}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            {opticItem.ProductDescription}
+                            <p>{opticItem.price}</p>
+                            <p>{opticItem.Quentity}</p>
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <Button size="small" color="primary">
+                        Share
+                    </Button>
+                </CardActions>
+            </Card>
+    );
 }
 // export const OpticCard = ({opticItem})=>{
 //     return(
