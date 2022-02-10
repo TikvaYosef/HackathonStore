@@ -39,7 +39,7 @@ export const Admin = () => {
                                 <td>{BodyCare.ProductName}</td>
                                 <td>{BodyCare.Price}</td>
                                 <td>{BodyCare.ProductDescription} </td>
-                                <td><img src={BodyCare.ProductImg} /></td>
+                                {/* <td><img src={BodyCare.ProductImg} /></td> */}
                             </tr>
                         )
                     }
