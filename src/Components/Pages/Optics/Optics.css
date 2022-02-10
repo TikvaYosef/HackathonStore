@@ -9,12 +9,12 @@
 .opticCard{
     width: 33%;
     height: 60vh;
-    /* overflow: hidden; */
+    margin-top: 25px;
 }
 
 .opticContent{
     height: 90%;
-    /* text-overflow: clip; */
+    overflow: hidden; 
 }
 
 .opticPic{
