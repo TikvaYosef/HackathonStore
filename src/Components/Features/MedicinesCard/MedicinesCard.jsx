@@ -7,7 +7,7 @@ export const MedicinesCard = ({ MedicineCareItem }) => {
     return (
         <div>
             
-            <h1>House Care</h1>
+            <h1>Medicines </h1>
             <p>{CompanyName}</p>
             <p>{ProductName}</p>
             <p>{price}</p>

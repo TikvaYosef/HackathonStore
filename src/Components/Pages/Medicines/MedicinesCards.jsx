@@ -4,12 +4,12 @@ import { MedicinesCard } from "../../Features/MedicinesCard/MedicinesCard";
 
 
 export const MedicinesCards = () => {
-    const { Medicines } = useContext(MedicinesContext);
+    const { medicines } = useContext(MedicinesContext);
 
     return (
         <div>
             {
-                Medicines.map((item) =>
+                medicines.map((item) =>
                     <MedicinesCard MedicineCareItem={item} />
                 )
             }
