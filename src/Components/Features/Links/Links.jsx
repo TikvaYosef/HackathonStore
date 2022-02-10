@@ -22,18 +22,18 @@ export const Links = () => {
     const auth = useAuth();
     return (
         <nav className="sideBar">
-            <ul >
-            <Link to="/"><li>Home</li></Link>
-            <Link to="/BodyCare"><li>BodyCare</li></Link>
-            <Link to="/HouseCare"><li>HouseCare</li></Link>
-            <Link to="/Admin"><li>Admin</li></Link>
-            <Link to="/Medicines"><li>Medicines</li></Link>
-            <Link to="/Optics"><li>Optics</li></Link>
+            
+            <Link to="/">Home</Link>
+            <Link to="/BodyCare">BodyCare</Link>
+            <Link to="/HouseCare">HouseCare</Link>
+            <Link to="/Admin">Admin</Link>
+            <Link to="/Medicines">Medicines</Link>
+            <Link to="/Optics">Optics</Link>
             <Link to="/Profile">Profile</Link>
           {
             !auth.user && (<Link to="/Login">Login</Link>)
           }
-            </ul>
+            
         </nav>
     )
 }

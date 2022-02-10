@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Roboto+Mono:ital,wght@1,500&display=swap');
 .App {
   display: grid;
   grid-template-areas: 
@@ -16,7 +17,7 @@
 
 .header{
   grid-area: header;
-  background-color: aquamarine;
+  background-color: #1976d2;
 }
 
 .main{
@@ -33,6 +34,13 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: burlywood;
+}
+
+.sideBar a{
+  text-decoration: none;
+  font-family: 'Inconsolata', monospace;
+  /* font-size: larger; */
+  color: #1976d2;
 }
 
 .footer{

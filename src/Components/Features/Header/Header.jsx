@@ -40,7 +40,7 @@ export default function Header() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Froud
+            ETA-Pharm
           </Typography>
           {auth && (
             <div>
