@@ -1,11 +1,15 @@
 import React, { useContext } from "react";
-import {opticsContext} from '../../../Context/OpticsContext';
+import { opticsContext } from '../../../Context/OpticsContext';
+import OpticCard from '../../Features/OpticCard/OpticCard';
 
 
-export const Optics = () => {
-    const { shoes,isLoading } = useContext(opticsContext);
+export const OpticCards = () => {
+    const { optics } = useContext(opticsContext);
+    console.log(optics);
 
     return (
-        shoes.map((item) => 
+        <section className="">
+            {optics.map((item) => <OpticCard opticItem={item} key={item.OpticsId} />)}
+        </section>
     )
 }
