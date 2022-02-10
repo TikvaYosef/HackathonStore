@@ -1,4 +1,4 @@
-const basicUrl = 'https://etapharm.azurewebsites.net/api';
+export const basicUrl = 'https://etapharm.azurewebsites.net/api';
 
 export async function Get() {
     try {

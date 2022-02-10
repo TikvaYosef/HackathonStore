@@ -1,3 +1,5 @@
+import {basicUrl} from './MedicinesService.service';
+
 export async function Get() {
     try {
 
@@ -11,11 +13,12 @@ export async function Get() {
     }
 }
 
-export async function GetById() {
+export async function GetById(id) {
     try {
 
-        return await fetch("")
+        return await fetch(`${basicUrl}/Optics/${id}`)
             .then(res => res.json())
+            .then((data)=>console.log(data))
             .catch(() => {})
     }
     catch{
