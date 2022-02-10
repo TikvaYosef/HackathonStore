@@ -4,7 +4,7 @@ import { Get } from "../Services/MedicinesService.service";
 
 export const MedicinesContext = createContext();
 
-export const BodyCareContextProvider = ({children}) => {
+export const MedicinesContextProvider = ({children}) => {
     const [medicines, setMedicines] = useState([]);
 
     useEffect(() => {

@@ -5,8 +5,8 @@ export async function Get() {
         return await fetch(`${basicUrl}/Medicines`)
             .then(res => res.json())
     }
-    catch(err){
-        console.log(err);
+    catch(error){
+        console.log(error);
     }
 }
 
@@ -16,8 +16,8 @@ export async function GetById(id) {
         return await fetch(`${basicUrl}/${id}`)
             .then(res => res.json())
     }
-    catch(err){
-        console.log(err);
+    catch(error){
+        console.log(error);
     }
 }
 
@@ -30,11 +30,11 @@ export async function Post(data) {
     } 
 
     try {
-        return await fetch(`${basicUrl},${option}`)
+        return await fetch(basicUrl,option)
             .then(res => res.json())
             .then(data => console.log('Success:', data));
     }
-    catch(err){
+    catch(error){
         console.error('Error:', error);
     }
 }
@@ -52,7 +52,7 @@ export async function Put(id,data) {
             .then(res => res.json())
             .then(data => console.log('Success:', data));
     }
-    catch(err){
+    catch(error){
         console.error('Error:', error);
     }
 }
@@ -66,7 +66,7 @@ export async function Delete() {
         return await fetch(basicUrl,option)
             .then(res => res.json())
     }
-    catch(err){
+    catch(error){
         console.error('Error:', error);
     }
 }
